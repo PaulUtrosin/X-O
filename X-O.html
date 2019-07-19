@@ -13,8 +13,147 @@
 <script type="text/javascript">
 var canvas = document.getElementById('canvas'); // создаём переменную для обращения к canvas по id
 var context =canvas.getContext('2d'); // Получаем доступ для рисования в конвасе, т.е. к его контексту
+//Функция отрисовки секторов поля
+var k1 = {
+ znach : 0
+};
+
+var drowK1 = function () {
+//context.clearRect(0,0,50,50);// чистим прямоугольник (x,y - позиция левого верхнего угла прямоугольника, 50,50 - размеры)
+if (k1.znach == 0) {
+  context.fillStyle = 'black';//Задаём параметры кисти
+} else if (k1.znach == 1) {
+  context.fillStyle = 'red';
+} else if (k1.znach == 2){
+ context.fillStyle = 'blue';
+ }
+ context.fillRect(0,0,50,50);// рисуем прямоугольник (x,y - позиция левого верхнего угла прямоугольника, 50,50 - размеры)
+}
+
+var k2 = {
+ znach : 0
+};
+
+var drowK2 = function () {
+if (k2.znach == 0) {
+  context.fillStyle = 'black';
+ } else if (k2.znach == 1) {
+  context.fillStyle = 'red';
+} else if (k2.znach == 2){
+  context.fillStyle = 'blue';
+}
+context.fillRect(51,0,50,50);
+}
 
 
+var k3 = {
+ znach : 0
+};
+
+var drowK3 = function () {
+if (k3.znach == 0) {
+  context.fillStyle = 'black';
+ } else if (k3.znach == 1) {
+  context.fillStyle = 'red';
+ } else if (k3.znach == 2){
+ context.fillStyle = 'blue';
+ }
+  context.fillRect(102,0,50,50);
+}
+
+
+var k4 = {
+ znach : 0
+};
+
+var drowK4 = function () {
+if (k4.znach == 0) {
+ context.fillStyle = 'black';
+ } else if (k4.znach == 1) {
+  context.fillStyle = 'red';
+ } else if (k4.znach == 2){
+  context.fillStyle = 'blue';
+ }
+ context.fillRect(0,51,50,50);
+}
+
+
+var k5 = {
+ znach : 0
+};
+var drowK5 = function () {
+if (k5.znach == 0) {
+  context.fillStyle = 'black';
+ } else if (k5.znach == 1) {
+  context.fillStyle = 'red';
+} else if (k5.znach == 2){
+  context.fillStyle = 'blue';
+ }
+ context.fillRect(51,51,50,50);
+}
+
+
+var k6 = {
+ znach : 0
+};
+var drowK6 = function () {
+if (k6.znach == 0) {
+ context.fillStyle = 'black';
+ } else if (k6.znach == 1) {
+  context.fillStyle = 'red';
+ } else if (k6.znach == 2){
+  context.fillStyle = 'blue';
+ }
+ context.fillRect(102,51,50,50);
+}
+
+
+
+var k7 = {
+ znach : 0
+};
+var drowK7 = function () {
+if (k7.znach == 0) {
+  context.fillStyle = 'black';
+ } else if (k7.znach == 1) {
+  context.fillStyle = 'red';
+ } else if (k7.znach == 2){
+  context.fillStyle = 'blue';
+ }
+ context.fillRect(0,102,50,50);
+}
+
+
+var k8 = {
+ znach : 0
+};
+var drowK8 = function () {
+if (k8.znach == 0) {
+  context.fillStyle = 'black';
+ } else if (k8.znach == 1) {
+  context.fillStyle = 'red';
+ } else if (k8.znach == 2){
+ context.fillStyle = 'blue';
+}
+context.fillRect(51,102,50,50);
+}
+
+
+var k9 = {
+ znach : 0
+};
+var drowK9 = function () {
+  if (k9.znach == 0) {
+  context.fillStyle = 'black';
+ } else if (k9.znach == 1) {
+  context.fillStyle = 'red';
+ } else if (k9.znach == 2){
+  context.fillStyle = 'blue';
+ }
+ context.fillRect(102,102,50,50);
+}
+//
+drowK1(k1.znach);drowK2(k2.znach);drowK3(k3.znach);drowK4(k4.znach);drowK5(k5.znach);drowK6(k6.znach);drowK7(k7.znach);drowK8(k8.znach);drowK9(k9.znach);
 
 </script>
 </body>
